@@ -1,9 +1,11 @@
 import React from 'react'
 import {Spin} from 'antd'
+import { LoadingOutlined } from '@ant-design/icons';
+
 function Spinner() {
     return (
         <div className="spinner">
-            <Spin size='large'/>
+           <LoadingOutlined style={{ fontSize: 45 }} spin />
         </div>
     )
 }

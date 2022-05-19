@@ -1,159 +1,64 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: azure;
-}
-body , html{
-  overflow-x: hidden !important;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.bs1{
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-.ant-row{
-  margin: 0 20 !important;
-}
-.spinner{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 9999;
-}
-h1{
-  font-size: 30px;
-  font-weight: bold;
-  color : orangered;
-}
-p{
-  margin: 5px !important;
-  
-  padding: 0;
-}
-.btn1{
-  box-shadow: none ;
-  background-color : white ;
-  color: orangered ;
-  border: 1px solid orangered !important;
-  padding: 0 ;
-  outline: none !important;
-  border-radius: 7px;
-
-}
-
-.btn1:hover{
-  background-color: orangered;
-  color: white;
-}
-
-button{
-  padding: 3px 10px !important;
-}
-.header{
+.wrapper-car{
+ 
+  align-items: center;
+  text-align: center;
+  /* background-image: linear-gradient(rgb(196, 194, 237), rgb(214, 215, 216)); */
+  border-radius: 12px;
+  cursor: pointer;
   padding: 10px;
+  border: 1px rgb(188, 188, 188) solid;
+}
+
+.image-top{
+
+  object-fit: cover;
+ 
   
 }
-.header .ant-btn{
-  box-shadow: none !important;
-  background-color : white !important;
-  color: orangered !important;
-  border: 1px solid orangered !important;
-  padding: 5px 15px !important;
-  outline: none !important;
+.car-image{
+  width: 100%;
+  padding:10px;
+  border-radius: 35px;
+ 
+  
 }
+
+.image-top{
+  object-fit: contain;
+}
+
 .content{
-  min-height: 90vh;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;  
+  font-style:bold;
+
+
   
 }
-.footer{
-  background-color: aliceblue;
-  padding: 10px;
-}
 
-
-
-.car{
-  border-radius: 5px;
-  margin-top: 100px;
-  width: 180px;
-  margin-right: 15px;
-
-}
-
-
-.carimg{
-  height:180px;
-  border-radius: 5px;
-  
-  
-}
-.car-content{
-  width: 326px;
-  opacity: 1;
-  transition: 0.3s;
-}
-.login{
-  background-color: rgb(255, 255, 255);
-  padding-top: 50px;
-  min-height: 100vh;
-}
-.login label , .login h1{
-  color: rgb(255, 255, 255) !important;
-  opacity: 1;
-}
-.login-form{
-  background-color: #d4d4d4;
-  border-radius: 7px;
-  border: 2px solid orangered;
-  box-shadow: 10px 10px 5px #aaaaaa;
-}
-.login-form input{
-  background-color: #4b4b4b;
-  border : none !important;
+.btn-book{
+   
   color: white;
-  opacity: 1;
-  border-radius: 5px;
-  outline:solid 1px orangered;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border:solid rgb(165, 165, 255) 1px;
+  font-size: 18px;
 }
-.login-logo{
-  position: absolute;
-  left:0;
-  right:0;
-  top: 60%;
-  bottom: 50%;
-  transform: translateY(-50% , -50%);
-  font-size:70px;
-  opacity: 0.2 !important;
-  
 
-}
-.login a{
+.btn-book:hover{
+  background-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255) !important;
-  opacity: 1;
-}
-.register{ 
-  color: #ffff !important;
+ 
 }
 
-.register:hover{
-color: orangered  !important;
-}
-.carimg2{
-  height: 400px;
-  border-radius: 10px;
-  width: auto;
+p{
+  margin:0;
+
 }
 
-svg{
-  height:20px !important;
-  width : 20px !important;
+.wrapper-car:hover{
+  box-shadow: 10px 10px 20px 10px #e6e6e6;
 }
-a{
-  color: orangered !important;
-}
+
+

@@ -9,6 +9,7 @@ import moment from "moment";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { Popconfirm, message } from "antd";
 const { RangePicker } = DatePicker;
+
 function AdminHome() {
   const { cars } = useSelector((state) => state.carsReducer);
   const { loading } = useSelector((state) => state.alertsReducer);
@@ -41,12 +42,12 @@ function AdminHome() {
       <Row justify="center" gutter={16}>
         {totalCars.map((car) => {
           return (
-            <Col lg={5} sm={24} xs={24}>
-              <div className="car p-2 bs1">
-                <img src={car.image} className="carimg" />
+            <Col lg={5} sm={18} xs={24}>
+              <div className="wrapper-car">
+                <img src={car.image} className="car-image" />
 
-                <div className="car-content d-flex align-items-center justify-content-between">
-                  <div className="text-left pl-2">
+                <div className="car-content d-flex align-items-center justify-content-center">
+                  <div className="text-left p-3">
                     <p>{car.name}</p>
                     <p> Rent Per Hour {car.rentPerHour} /-</p>
                   </div>
@@ -61,8 +62,9 @@ function AdminHome() {
 
                     <Popconfirm
                       title="Are you sure to delete this car?"
-                      onConfirm={()=>{dispatch(deleteCar({carid : car._id}))}}
-                      
+                      onConfirm={() => {
+                        dispatch(deleteCar({ carid: car._id }));
+                      }}
                       okText="Yes"
                       cancelText="No"
                     >
